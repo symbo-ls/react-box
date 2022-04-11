@@ -1,4 +1,4 @@
-# rc-tooltip
+# react-box
 
 React Box
 
