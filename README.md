@@ -32,31 +32,31 @@ Box element which can be used with
 
 ## Examples
 
-import { Box } from '@symbo.ls/react'
+    import { Box } from '@symbo.ls/react'
 
-// example1
+    // example1
 
-const Button = () => <Box as="button" theme="primary" />
+    const Button = () => <Box as="button" theme="primary" />
 
-// example2
-const buttonProps = {
-  theme: 'primary',
-  size: 'A',
-  padding: 'B Z'
-}
-
-const Button2 = () => <Box tag="button" ...buttonProps />
-
-// example3
-const buttonConf = {
-  tag: 'button',
-  props: {
+    // example2
+    const buttonProps = {
     theme: 'primary',
     size: 'A',
     padding: 'B Z'
-  }
-}
-const Button3 = () => <Box ...buttonConf />
+    }
+
+    const Button2 = () => <Box tag="button" ...buttonProps />
+
+    // example3
+    const buttonConf = {
+    tag: 'button',
+    props: {
+        theme: 'primary',
+        size: 'A',
+        padding: 'B Z'
+    }
+    }
+    const Button3 = () => <Box ...buttonConf />
 
 
 ## API
