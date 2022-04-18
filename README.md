@@ -40,22 +40,23 @@ const Button = () => <Box as="button" theme="primary" />
 
 // example2
 const buttonProps = {
-theme: 'primary',
-size: 'A',
-padding: 'B Z'
+  theme: 'primary',
+  size: 'A',
+  padding: 'B Z'
 }
 
 const Button2 = () => <Box tag="button" ...buttonProps />
 
 // example3
 const buttonConf = {
-tag: 'button',
-props: {
+  tag: 'button',
+  props: {
     theme: 'primary',
     size: 'A',
     padding: 'B Z'
+  }
 }
-}
+
 const Button3 = () => <Box ...buttonConf />
 ```
 
