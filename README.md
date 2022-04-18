@@ -34,11 +34,7 @@ Box element which can be used with
 ```javascript
 import { Box } from '@symbo.ls/react'
 
-// example1
-
-const Button = () => <Box as="button" theme="primary" />
-
-// example2
+// example 1
 const buttonProps = {
   theme: 'primary',
   size: 'A',
@@ -47,7 +43,7 @@ const buttonProps = {
 
 const Button2 = () => <Box tag="button" ...buttonProps />
 
-// example3
+// example 2
 const buttonConf = {
   tag: 'button',
   props: {
