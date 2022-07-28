@@ -31,33 +31,30 @@ Box element which can be used with
 
 
 ## Examples
+```javascript
+import { Box } from '@symbo.ls/react'
 
-    import { Box } from '@symbo.ls/react'
+// example 1
+const buttonProps = {
+  theme: 'primary',
+  size: 'A',
+  padding: 'B Z'
+}
 
-    // example1
+const Button2 = () => <Box tag="button" ...buttonProps />
 
-    const Button = () => <Box as="button" theme="primary" />
-
-    // example2
-    const buttonProps = {
+// example 2
+const buttonConf = {
+  tag: 'button',
+  props: {
     theme: 'primary',
     size: 'A',
     padding: 'B Z'
-    }
+  }
+}
 
-    const Button2 = () => <Box tag="button" ...buttonProps />
-
-    // example3
-    const buttonConf = {
-    tag: 'button',
-    props: {
-        theme: 'primary',
-        size: 'A',
-        padding: 'B Z'
-    }
-    }
-    const Button3 = () => <Box ...buttonConf />
-
+const Button3 = () => <Box ...buttonConf />
+```
 
 ## API
 The primary documentation for react-box is the reference book, which describes the API and gives examples of its usage.
