@@ -31,7 +31,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
-    "@symbo.ls/scratch": "0.2.28"
+    "@symbo.ls/scratch": "0.3.19",
+    "css-in-props": "0.8.28"
   },
   "devDependencies": {
     "@types/jest": "^26.0.0",
