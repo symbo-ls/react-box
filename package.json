@@ -1,9 +1,9 @@
 {
-  "name": "react-box",
-  "version": "0.0.1",
+  "name": "@symbo.ls/react-box",
+  "version": "0.0.5",
   "description": "React Box",
   "keywords": [
-    "react-box"
+    "@symbo.ls/react-box"
   ],
   "homepage": "",
   "bugs": {
@@ -21,9 +21,7 @@
   "main": "lib/index",
   "module": "lib/index",
   "scripts": {
-    "start": "dumi dev",
-    "compile": "father build && lessc assets/bootstrap.less assets/bootstrap.css && lessc assets/bootstrap_white.less assets/bootstrap_white.css",
-    "coverage": "father test --coverage",
+    "start": "yarn start",
     "lint": "eslint src/ --ext .tsx,.ts,.jsx,.js",
     "now-build": "npm run build",
     "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish",
@@ -40,7 +38,6 @@
     "@types/react-dom": "^16.9.2",
     "@types/warning": "^3.0.0",
     "cross-env": "^7.0.0",
-    "dumi": "^1.1.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
