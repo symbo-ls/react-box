@@ -32,7 +32,7 @@
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "@symbo.ls/scratch": "0.3.19",
-    "css-in-props": "0.8.28"
+    "css-in-props": "0.9.3"
   },
   "devDependencies": {
     "@types/jest": "^26.0.0",
