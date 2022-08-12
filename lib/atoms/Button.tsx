@@ -3,7 +3,7 @@ import Box from "../index";
 import { transformEmotion, transformClassname } from 'css-in-props' 
 
 export const Button = (props, children) => {
-  const buttonConf = {
+  const defaultProps = {
     tag: "button",
     props: {
       theme: "primary",
@@ -14,7 +14,7 @@ export const Button = (props, children) => {
     ...props,
   };
   return (
-    <Box className={transformEmotion(transformClassname(buttonConf))}>
+    <Box className={transformEmotion(transformClassname(defaultProps))} >
       {children}
     </Box>
   );

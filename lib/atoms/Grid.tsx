@@ -3,7 +3,7 @@ import Box from "../index";
 import { transformEmotion, transformClassname} from 'css-in-props' 
 
 const Flex = (props, children) => {
-  const buttonConf = {
+  const defaultProps = {
     tag: "div",
     props: {
       theme: "primary",
@@ -14,7 +14,7 @@ const Flex = (props, children) => {
     ...props,
   };
   return (
-    <Box className={transformEmotion(transformClassname(buttonConf))}>
+    <Box className={transformEmotion(transformClassname(defaultProps))}>
       {children}
     </Box>
   );
