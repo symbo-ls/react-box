@@ -9,12 +9,25 @@ const Flex = (props, children) => {
       theme: "primary",
       padding: "A",
       margin: "D",
-      display: "grid"
+     
     },
     ...props,
   };
+
+  const gridProps = {
+    display: "grid",
+    columns: props.columns,
+    rows: props.rows,
+    area: props.area,
+    template: props.template,
+    templateAreas: props.templateAreas,
+    gap: props.gap,
+    columnGap: props.template,
+    rowGap: props.template
+  }
+
   return (
-    <Box className={transformEmotion(transformClassname(defaultProps))}>
+    <Box className={transformEmotion(transformClassname(defaultProps, gridProps))}>
       {children}
     </Box>
   );

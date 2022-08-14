@@ -9,13 +9,19 @@ const Flex = (props, children) => {
       theme: "primary",
       padding: "A",
       margin: "D",
-      display: "flex",
-      alignItems: "center"
     },
     ...props,
   };
+
+  const flexProps = {
+    display: 'flex',
+    flexFlow: props.flexFlow,
+    alignItems: props.alignItems,
+    justifyContent: props.justifyContent
+  }
+
   return (
-    <Box className={transformEmotion(transformClassname(defaultProps))}>
+    <Box className={transformEmotion(transformClassname(defaultProps, flexProps))}>
       {children}
     </Box>
   );
