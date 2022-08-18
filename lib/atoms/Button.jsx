@@ -1,11 +1,11 @@
 import React from "react";
 import IconText from "./IconText";
 
-export const Button = (props, children) => {
+export const Button = (props) => {
  
   return (
     <IconText tag="button" {...props}>
-      {children}
+      {props.children}
     </IconText>
   );
 };

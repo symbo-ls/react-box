@@ -1,9 +1,9 @@
 import React from "react";
 
-const Text = (props, children) => {
+const Text = (props) => {
   return (
     <>
-      {props.text || children}
+      {props.text || props.children}
     </>
   );
 };

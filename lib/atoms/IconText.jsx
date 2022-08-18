@@ -3,13 +3,13 @@ import Flex from "./flex";
 import Icon from "./Icon";
 import Text from "./Text";
 
-const IconText = (props, children) => {
+const IconText = (props) => {
 
   return (
     <Flex alignItems="center" {...props}>
       <Icon name={props.name} {...props.icon} />
       <Text text={props.text} />
-      {children}
+      {props.children}
     </Flex>
   );
 };
