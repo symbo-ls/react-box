@@ -8,11 +8,12 @@ const Flex = (props) => {
     display: 'flex',
     flexFlow: props.flexFlow,
     alignItems: props.alignItems,
-    justifyContent: props.justifyContent
+    justifyContent: props.justifyContent,
+    ...props
   }
 
   return (
-    <Box className={transformEmotion(transformClassname(props, flexProps))}>
+    <Box className={transformEmotion(transformClassname(flexProps))}>
       {props.children}
     </Box>
   );

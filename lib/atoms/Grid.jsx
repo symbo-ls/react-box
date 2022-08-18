@@ -13,11 +13,12 @@ const Flex = (props) => {
     templateAreas: props.templateAreas,
     gap: props.gap,
     columnGap: props.template,
-    rowGap: props.template
+    rowGap: props.template,
+    ...props
   }
 
   return (
-    <Box className={transformEmotion(transformClassname(props, gridProps))}>
+    <Box className={transformEmotion(transformClassname(gridProps))}>
       {props.children}
     </Box>
   );
