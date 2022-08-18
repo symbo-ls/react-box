@@ -1,8 +1,7 @@
 import React from "react";
 import IconText from "./IconText";
 
-export const Button = (props) => {
- 
+const Button = (props) => {
   return (
     <IconText tag="button" {...props}>
       {props.children}
@@ -10,3 +9,4 @@ export const Button = (props) => {
   );
 };
  
+export default Button

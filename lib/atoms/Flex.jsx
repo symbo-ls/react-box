@@ -13,7 +13,7 @@ const Flex = (props) => {
   }
 
   return (
-    <Box className={transformEmotion(transformClassname(flexProps))}>
+    <Box tag={props.tag} className={transformEmotion(transformClassname(flexProps))}>
       {props.children}
     </Box>
   );
