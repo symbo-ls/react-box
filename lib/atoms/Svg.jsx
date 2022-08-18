@@ -1,7 +1,5 @@
 import React from "react";
 import Box from "../index";
-import { transformEmotion, transformClassname} from 'css-in-props' 
-
 
 const Svg = (props) => {
   const defaultConf = {
@@ -12,7 +10,7 @@ const Svg = (props) => {
     ...props,
   };
   return (
-    <Box tag="svg" className={transformEmotion(transformClassname(defaultConf))}>
+    <Box tag='svg' {...defaultConf}>
       <use xlinkHref={props.name} />
     </Box>
   );
