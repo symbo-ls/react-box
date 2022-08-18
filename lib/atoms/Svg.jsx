@@ -5,7 +5,6 @@ import { transformEmotion, transformClassname} from 'css-in-props'
 
 const Svg = (props) => {
   const defaultConf = {
-    tag: "svg",
     attr: {
       xmlns: 'http://www.w3.org/2000/svg',
       'xmlns:xlink': 'http://www.w3.org/1999/xlink'
@@ -13,7 +12,7 @@ const Svg = (props) => {
     ...props,
   };
   return (
-    <Box className={transformEmotion(transformClassname(defaultConf))}>
+    <Box tag="svg" className={transformEmotion(transformClassname(defaultConf))}>
       <use xlinkHref={props.name} />
     </Box>
   );
