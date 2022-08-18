@@ -1,6 +1,6 @@
 {
   "name": "@symbo.ls/react-box",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React Box",
   "keywords": [
     "@symbo.ls/react-box"
@@ -24,8 +24,7 @@
     "start": "yarn start",
     "lint": "eslint src/ --ext .tsx,.ts,.jsx,.js",
     "now-build": "npm run build",
-    "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish",
-    "test": "father test"
+    "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish"
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
@@ -41,8 +40,6 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
     "eslint": "^7.1.0",
-    "father": "^2.23.1",
-    "father-build": "^1.18.6",
     "np": "^7.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
