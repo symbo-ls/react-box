@@ -1,5 +1,6 @@
 import React from "react";
 import Box from "../index";
+import Text from "./Text"
 
 const Radio = (props) => {
   const defaultConf = {
@@ -9,7 +10,9 @@ const Radio = (props) => {
     ...props,
   };
   return (
-    <Box tag='input' type='radio' {...defaultConf}>
+    <Box>  
+      <Box tag='input' type='radio' {...defaultConf} />
+      <Text>{props.label}</Text>
     </Box>
   );
 };
