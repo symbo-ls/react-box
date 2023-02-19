@@ -1,6 +1,8 @@
 # react-box
 
-React Box
+This repository is merged into https://github.com/symbo-ls/smbls
+
+---
 
 
 ## Table of Contents
